@@ -1,0 +1,6 @@
+{
+    "require": {
+        "symfony/yaml": ">=2.0.6",
+        "imagine/Imagine": ">=0.2.8"
+    }
+}
