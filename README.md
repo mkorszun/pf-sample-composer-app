@@ -13,7 +13,7 @@ This guide will step you through adding the Composer package manager to a sample
 
 You can find a sample project using composer here: <https://github.com/phpfog/pf-sample-composer-app>
 
-#### Imitations
+#### Limitations
 
 Please note that dependancies that have binaries may not work once deployed. PHP Fog does not support Composer libraries that include binary executables.
 
