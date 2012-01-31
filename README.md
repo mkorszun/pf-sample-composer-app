@@ -13,6 +13,10 @@ This guide will step you through adding the Composer package manager to a sample
 
 You can find a sample project using composer here: <https://github.com/phpfog/pf-sample-composer-app>
 
+#### Imitations
+
+Please note that dependancies that have binaries may not work once deployed. PHP Fog does not support Composer libraries that include binary executables.
+
 ### Install Composer Locally
 
 Composer is a command line package management tool that can be run directly directly from the root project folder or installed using [Homebrew](https://github.com/mxcl/homebrew). 
@@ -39,7 +43,7 @@ In the root project folder, create a `composer.json` manifest file:
     	}
 	}
 
-The above sample manifest file defines Symfony Yaml and Imagine as dependencies in the required section. The ">=VERSION" rule tells Composer to fetch the newest version of the library greater or equal to the specified version number.
+The above sample manifest file defines Yaml and Imagine as dependencies in the required section. The ">=VERSION" rule tells Composer to fetch the newest version of the library greater or equal to the specified version number.
 
 ### Install Dependencies
 
@@ -80,7 +84,7 @@ To fetch the latest library versions run the following command:
 
 	composer.phar update
 
-This will download the newest available libraries using the version rules specified in the manifest and updates the composer.lock file.
+This will download the newest available libraries using the version rules specified in the manifest. The composer.lock file will be updated to reflect the new version numbers.
 
 
 ### Deploying to PHP Fog
